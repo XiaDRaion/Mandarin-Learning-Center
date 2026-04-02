@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function GetInTouch() {
   return (
-    <section className="min-h-screen bg-navy-900 py-20 px-4 font-sans relative">
+    <section id="contact" className="min-h-screen bg-navy-900 py-20 px-4 font-sans relative">
       {/* Background decoration (optional, subtle dragon/pattern hint) */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
 
