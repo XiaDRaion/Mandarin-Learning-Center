@@ -1,15 +1,10 @@
 import React from "react";
-import {
-  MessageSquare,
-  Mail,
-  MapPin,
-  Send
-} from "lucide-react";
+import { MessageSquare, Mail, MapPin, Send } from "lucide-react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function GetInTouch() {
   return (
-    <section className="min-h-screen bg-[#FFFDF9] py-20 px-4 font-sans relative">
+    <section className="min-h-screen bg-navy-900 py-20 px-4 font-sans relative">
       {/* Background decoration (optional, subtle dragon/pattern hint) */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
 
@@ -26,7 +21,7 @@ export default function GetInTouch() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10">
         {/* Left Column: Form */}
-        <div className="lg:col-span-7 bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">
+        <div className="lg:col-span-7 bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_12px_40px_rgb(0,0,0,0.15)] border border-gray-100">
           <h3 className="text-2xl font-bold text-[#1A2B49] mb-8">
             Send Us a Message
           </h3>
@@ -105,7 +100,7 @@ export default function GetInTouch() {
         {/* Right Column: Contact Info & Hours */}
         <div className="lg:col-span-5 flex flex-col gap-6">
           {/* Contact Card (Red) */}
-          <div className="bg-[#DA291C] text-white rounded-[2rem] p-8 md:p-10 shadow-lg">
+          <div className="bg-[#DA291C] text-white rounded-[2rem] p-8 md:p-10 shadow-[0_12px_40px_rgb(0,0,0,0.25)]">
             <h3 className="text-2xl font-bold mb-8">Quick Contact</h3>
 
             <div className="space-y-8">
@@ -174,7 +169,7 @@ export default function GetInTouch() {
           </div>
 
           {/* Office Hours Card (White) */}
-          <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex-1">
+          <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_12px_40px_rgb(0,0,0,0.15)] border border-gray-100 flex-1">
             <h3 className="text-xl font-bold text-[#1A2B49] mb-6">
               Office Hours
             </h3>

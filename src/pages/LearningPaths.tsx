@@ -52,13 +52,13 @@ const LEARNING_PATHS: LearningPathData[] = [
 
 export default function LearningPath() {
   return (
-    <section className="min-h-screen bg-[#FFFDF9] py-20 px-4 font-sans">
+    <section className="min-h-screen bg-[#feeee2] py-20 px-4 font-sans">
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#1A2B49] mb-4 tracking-tight">
           Choose Your <span className="text-[#DA291C]">Learning Path</span>
         </h2>
-        <p className="text-gray-500 text-lg">
+        <p className="text-gray-700 text-lg">
           From complete beginners to advanced learners, we have the perfect
           course designed for your proficiency level
         </p>
@@ -69,7 +69,7 @@ export default function LearningPath() {
         {LEARNING_PATHS.map((path) => (
           <div
             key={path.id}
-            className="bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden"
+            className="bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden hover:-translate-y-2 hover:shadow-[0_12px_40px_rgb(0,0,0,0.15)] transition-all duration-300 relative z-10"
           >
             {/* Card Top / Cream Banner area */}
             <div className="bg-[#FEFBF4] h-48 p-8 flex flex-col relative">

@@ -110,7 +110,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-blue-100/70 hover:text-white text-sm transition-colors"
+                    className="text-blue-100/70 hover:text-red-500 text-sm transition-colors"
                   >
                     {link.name}
                   </a>
@@ -129,7 +129,7 @@ export default function Footer() {
                 <li key={course.name}>
                   <a
                     href={course.href}
-                    className="text-blue-100/70 hover:text-white text-sm transition-colors"
+                    className="text-blue-100/70 hover:text-red-500 text-sm transition-colors"
                   >
                     {course.name}
                   </a>

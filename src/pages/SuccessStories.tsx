@@ -62,7 +62,7 @@ const SUCCESS_STORIES: Story[] = [
 
 export default function SuccessStories() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#FFFDF9] to-[#FFF5F5] py-20 px-4 font-sans relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-[#FFFFFF] to-[#feeee2] py-20 px-4 font-sans relative overflow-hidden">
       {/* Decorative blurred background element to match the right-side glow */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-red-50/50 blur-[100px] pointer-events-none rounded-full" />
 
@@ -83,7 +83,7 @@ export default function SuccessStories() {
         {SUCCESS_STORIES.map((story) => (
           <div
             key={story.id}
-            className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col h-full hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-300"
+            className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col h-full hover:-translate-y-2 hover:shadow-[0_12px_40px_rgb(0,0,0,0.15)] transition-all duration-300"
           >
             {/* Quote Icon */}
             <div className="mb-4">

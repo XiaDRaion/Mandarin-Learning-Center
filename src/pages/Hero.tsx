@@ -1,129 +1,109 @@
 import React from "react";
+import { GraduationCap, MessageCircle, ArrowRight, Trophy } from "lucide-react";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span>Professional Mandarin Training</span>
-            </div>
-
-            {/* Main Heading */}
-            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Master Mandarin Chinese
-              <br />
-              <span className="text-red-500">
-                Your Journey to Fluency Starts Here
-              </span>
-            </h1>
-
-            {/* Description */}
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Learn Mandarin with expert instructors through HSK preparation
-              courses and flexible learning programs tailored to your level.
-            </p>
-
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-medium flex items-center justify-center space-x-2 transition-colors">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-                <span>Start Learning Today</span>
-              </button>
-
-              <button className="bg-white border-2 border-blue-500 text-blue-500 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium flex items-center justify-center space-x-2 transition-colors">
-                <span>Explore Courses</span>
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* Statistics */}
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">1000+</div>
-                <div className="text-sm text-gray-600 mt-1">Students</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">95%</div>
-                <div className="text-sm text-gray-600 mt-1">Pass Rate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">8+</div>
-                <div className="text-sm text-gray-600 mt-1">Years</div>
-              </div>
-            </div>
-
-            {/* Second Badge */}
-            <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <span>HSK Certified Expert Instructors</span>
-            </div>
+    <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-[#FFFDF9] via-[#FFFDF9] to-[#FFF5F5] py-8 px-4 font-sans overflow-hidden">
+      {/* Container */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center w-full relative z-10">
+        {/* Left Column: Text Content */}
+        <div className="flex flex-col items-start max-w-xl">
+          {/* Top Badge */}
+          <div className="inline-flex items-center gap-2 bg-[#FFE8E8] text-[#DA291C] px-4 py-2 rounded-full text-sm font-semibold mb-8 shadow-sm">
+            <GraduationCap size={18} />
+            <span>Professional Mandarin Training</span>
           </div>
 
-          {/* Right Content - Empty rounded area */}
-          <div className="flex justify-center items-center">
-            <div className="w-full h-96 bg-gradient-to-br from-white to-pink-50 rounded-3xl shadow-lg border border-gray-100 flex items-center justify-center">
-              <div className="text-gray-400 text-center">
-                <svg
-                  className="w-24 h-24 mx-auto mb-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg>
-                <p className="text-lg font-medium">Learning Content</p>
-                <p className="text-sm mt-2">
-                  Your Mandarin journey starts here
-                </p>
-              </div>
+          {/* Main Heading */}
+          <h1 className="text-4xl lg:text-[4rem] font-bold text-[#1A2B49] leading-[1.1] mb-4 tracking-tight">
+            Master Mandarin <br />
+            Chinese <br />
+            <span className="text-[#DA291C]">
+              Your Journey to <br /> Fluency Starts Here
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-gray-500 text-lg mb-6 leading-relaxed max-w-[90%]">
+            Learn Mandarin with expert instructors through HSK preparation
+            courses and flexible learning programs tailored to your level.
+          </p>
+
+          {/* Action Buttons */}
+          <div className="flex flex-wrap items-center gap-4 mb-8">
+            {/* Primary Button with scale-105 hover */}
+            <button className="bg-[#DA291C] text-white px-8 py-4 rounded-xl flex items-center gap-2 font-semibold shadow-[0_8px_20px_rgba(218,41,28,0.2)] transition-all duration-300 hover:scale-105 hover:bg-[#B82217] hover:shadow-[0_10px_25px_rgba(218,41,28,0.3)]">
+              <MessageCircle size={20} />
+              Start Learning Today
+            </button>
+
+            {/* Secondary Button with blue-800 hover */}
+            <button className="bg-white border-2 border-[#1E3A8A] text-[#1E3A8A] px-8 py-4 rounded-xl flex items-center gap-2 font-semibold transition-all duration-300 hover:bg-blue-800 hover:text-white hover:border-blue-800 hover:shadow-lg">
+              Explore Courses
+              <ArrowRight size={20} />
+            </button>
+          </div>
+
+          {/* Stats Row */}
+          <div className="flex items-center gap-10">
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-[#1E3A8A]">
+                1000+
+              </span>
+              <span className="text-gray-500 text-sm font-medium">
+                Students
+              </span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-[#1E3A8A]">
+                95%
+              </span>
+              <span className="text-gray-500 text-sm font-medium">
+                Pass Rate
+              </span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-[#1E3A8A]">8+</span>
+              <span className="text-gray-500 text-sm font-medium">Years</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
 
-export default Hero;
+        {/* Right Column: Hero Graphic */}
+        <div className="relative w-full max-w-lg mx-auto lg:ml-auto mt-10 lg:mt-0">
+          {/* Main Picture Container */}
+          <div className="relative w-full aspect-[3/3.3] bg-gradient-to-br from-[#FFF4E5] to-[#FCF9F2] rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-white/50 transition-transform duration-500 hover:scale-105 cursor-pointer">
+            {/* <img src="..." alt="Students" className="w-full h-full object-cover rounded-[2.5rem]" /> */}
+
+            {/* Top Right Floating Panda Avatar */}
+            <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full border-[6px] border-white shadow-xl overflow-hidden bg-white z-20">
+              <img
+                src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=200&auto=format&fit=crop"
+                alt="Panda"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Bottom Left Floating Badge */}
+            <div className="absolute -bottom-8 -left-8 bg-white p-5 rounded-2xl shadow-xl flex items-center gap-4 border border-gray-100 z-20">
+              <div className="w-12 h-12 bg-[#FFE8E8] rounded-full flex items-center justify-center shrink-0">
+                <Trophy size={24} className="text-[#DA291C]" />
+              </div>
+              <div>
+                <p className="text-[#1A2B49] font-bold leading-tight">
+                  HSK Certified
+                </p>
+                <p className="text-gray-500 text-sm">Expert Instructors</p>
+              </div>
+              {/* Decorative Red Top Border on Badge */}
+              <div className="absolute -top-px left-0 w-full h-0.5 bg-[#DA291C] rounded-t-2xl"></div>
+            </div>
+          </div>
+
+          {/* Decorative background blur behind the image to make it pop */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#DA291C]/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+        </div>
+      </div>
+    </section>
+  );
+}
