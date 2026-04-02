@@ -4,6 +4,10 @@ import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
 import ChooseUs from "./pages/ChooseUs";
 import LearningPath from "./pages/LearningPaths";
+import Prices from "./pages/Prices";
+import SuccessStories from "./pages/SuccessStories";
+import GetInTouch from "./pages/GetInTouch";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
@@ -12,6 +16,10 @@ const App = () => {
       <Hero />
       <ChooseUs />
       <LearningPath />
+      <Prices />
+      <SuccessStories />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };
