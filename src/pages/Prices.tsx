@@ -88,10 +88,9 @@ export default function Prices() {
             className={`relative bg-white rounded-3xl p-8 flex flex-col h-full shadow-[0_8px_30px_rgb(0,0,0,0.06)] 
               ${
                 plan.isPopular
-                  ? "border-2 border-[#DA291C] transform lg:-translate-y-4 hover:scale-105 transition-transform duration-500 scale-105"
-                  : "border-2 border-gray-300 hover:-translate-y-2"
+                  ? "border-2 border-[#DA291C] transform lg:-translate-y-4 scale-105 hover:scale-110 transition-all duration-300"
+                  : "border-2 border-gray-300 hover:-translate-y-2 transition-all duration-300"
               }
-              transition-all duration-300
             `}
           >
             {/* Most Popular Badge */}
