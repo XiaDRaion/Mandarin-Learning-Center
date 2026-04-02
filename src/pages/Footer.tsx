@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  MessageCircle,
-  Mail,
-  MapPin,
-} from "lucide-react";
+import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 interface FooterLink {
@@ -19,11 +15,11 @@ interface ContactInfo {
 }
 
 const QUICK_LINKS: FooterLink[] = [
-  { name: "Home", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Courses", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Testimonials", href: "#" },
+  { name: "Home", href: "#home" },
+  { name: "Features", href: "#features" },
+  { name: "Courses", href: "#courses" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Testimonials", href: "#testimonials" },
 ];
 
 const OUR_COURSES: FooterLink[] = [

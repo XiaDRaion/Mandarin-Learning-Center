@@ -63,7 +63,10 @@ const FEATURES: FeatureData[] = [
 
 export default function ChooseUs() {
   return (
-    <section className="min-h-screen bg-[#FFFFFF] py-20 px-4 font-sans relative">
+    <section
+      id="features"
+      className="min-h-screen bg-[#FFFFFF] py-20 px-4 font-sans relative"
+    >
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#1A2B49] mb-4 tracking-tight">

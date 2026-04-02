@@ -62,7 +62,10 @@ const SUCCESS_STORIES: Story[] = [
 
 export default function SuccessStories() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#FFFFFF] to-[#feeee2] py-20 px-4 font-sans relative overflow-hidden">
+    <section
+      id="testimonials"
+      className="min-h-screen bg-gradient-to-br from-[#FFFFFF] to-[#feeee2] py-20 px-4 font-sans relative overflow-hidden"
+    >
       {/* Decorative blurred background element to match the right-side glow */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-red-50/50 blur-[100px] pointer-events-none rounded-full" />
 

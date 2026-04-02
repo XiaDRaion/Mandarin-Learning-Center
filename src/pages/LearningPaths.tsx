@@ -52,7 +52,10 @@ const LEARNING_PATHS: LearningPathData[] = [
 
 export default function LearningPath() {
   return (
-    <section className="min-h-screen bg-[#feeee2] py-20 px-4 font-sans">
+    <section
+      id="courses"
+      className="min-h-screen bg-[#feeee2] py-20 px-4 font-sans"
+    >
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#1A2B49] mb-4 tracking-tight">
