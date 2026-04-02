@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import Navbar from "./pages/Navbar";
 import Hero from "./pages/Hero";
 import ChooseUs from "./pages/ChooseUs";
+import LearningPath from "./pages/LearningPaths";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <ChooseUs />
+      <LearningPath />
     </div>
   );
 };
