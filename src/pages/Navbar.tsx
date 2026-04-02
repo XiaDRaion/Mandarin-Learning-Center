@@ -20,38 +20,38 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a
-                href="#"
-                className="text-gray-900 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
+                href="#home"
+                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Home
               </a>
               <a
-                href="#"
-                className="text-gray-600 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
+                href="#features"
+                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Features
               </a>
               <a
-                href="#"
-                className="text-gray-600 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
+                href="#courses"
+                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Courses
               </a>
               <a
-                href="#"
-                className="text-gray-600 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
+                href="#pricing"
+                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Pricing
               </a>
               <a
-                href="#"
-                className="text-gray-600 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
+                href="#testimonials"
+                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Testimonials
               </a>
               <a
-                href="#"
-                className="text-gray-600 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
+                href="#contact"
+                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact
               </a>
